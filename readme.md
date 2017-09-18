@@ -25,13 +25,16 @@ Running the executables without command line arguments will display the usage. D
 [KEY SETTING]  
 Space: Turn on / off the clock.  
 s: Proceed one time step.  
-r: Reset.  
-t: Show tangents and normals.  
 
-m: Switch flow to mean curvature flow / volume preserving mean curvature flow.  
+b: burst a randomly chosen bubble.  
+l: Move constrained vertices to left.  
+r: Move constrained vertices to right.  
+
+m: Change rendering mode. 
 h: Switch flow to heyperbolic mean curvature flow / volume preserving hyperbolic mean curvature flow
 shift+w: save the screenshot.  
 w: Turn on/off image save mode.  
+etc
 
 ### Acknowledgement
 This program is built on SoapFilm3D, which is a simulation program accompanying the paper “Double Bubbles Sans Toil and Trouble: Discrete Circulation-Preserving Vortex Sheets for Soap Films and Foams”, Fang Da, Christopher Batty, Chris Wojtan, and Eitan Grinspun, Transactions on Graphics (SIGGRAPH 2015).
