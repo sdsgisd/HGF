@@ -22,9 +22,9 @@ s: Proceed one time step.
 Slash: Turn on/off the scene specific update.  
 b: Burst a randomly chosen bubble.  
 l: Move constrained vertices to left.  
-r: Move constrained vertices to right. 
-+: Inflate a bubble.
--: Deflate a bubble. 
+r: Move constrained vertices to right.   
++: Inflate a bubble.  
+-: Deflate a bubble.   
 
 m: Change rendering mode.  
 o: Save the state as files containing information of mesh, labels, and constrained vertices.  
