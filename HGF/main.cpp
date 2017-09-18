@@ -176,18 +176,19 @@ void keyboard(unsigned char k, int x, int y)
       g_sim.showPrimitiveInfo();
     }
 
+    else if (k == 'i' || k == 'I')
+    {
+        g_sim.get_hgf()->test_update_mesh_via_LosTopos();
+        
+    }
+    
     else if (k == 'o' or k=='O' )
     {
         const bool write_imaginary_vertices= k=='o'?false:true;
         g_sim.get_hgf()->writeObj_FaceLabel_constrainedVertices(write_imaginary_vertices);
         g_sim.get_hgf()->write_constrained_mesh("./constrained_mesh.obj");
     }
-
-    else if (k == 'i' || k == 'I')
-    {
-        g_sim.get_hgf()->test_update_mesh_via_LosTopos();
-        
-    }
+    
     else if (k == '+')
     {
         //Increasing the volume of the 0-th bubble.
