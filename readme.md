@@ -23,14 +23,18 @@ Lisence: BSD
 Running the executables without command line arguments will display the usage. Data files are located in the hgf_assets folder.
 
 [KEY SETTING]  
-Space: Turn on / off the clock.  
+Space: Turn on/off the clock.  
 s: Proceed one time step.  
 
-b: burst a randomly chosen bubble.  
+Slash: Turn on/off the scene specific update.
+b: Burst a randomly chosen bubble.  
 l: Move constrained vertices to left.  
-r: Move constrained vertices to right.  
+r: Move constrained vertices to right. 
++: Inflate a bubble.
+-: Deflate a bubble. 
 
-m: Change rendering mode. 
+m: Change rendering mode.  
+
 h: Switch flow to heyperbolic mean curvature flow / volume preserving hyperbolic mean curvature flow
 shift+w: save the screenshot.  
 w: Turn on/off image save mode.  
