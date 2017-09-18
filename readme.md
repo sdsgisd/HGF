@@ -7,8 +7,8 @@ This is built on SoapFilm3D, which is a simulation program accompanying the pape
 This program is built by standard procedures using CMAKE (http://www.cmake.org).
 The following external libraries are required:
 
-*Eigen (http://eigen.tuxfamily.org)  
-*OpenGL and GLUT (http://www.opengl.org/resources/libraries/glut/)  
+bullet* Eigen (http://eigen.tuxfamily.org)  
+bullet* OpenGL and GLUT (http://www.opengl.org/resources/libraries/glut/)  
 LAPACK (http://www.netlib.org/lapack/)  
 libigl (http://libigl.github.io/libigl/)  
 
