@@ -11,7 +11,7 @@ LAPACK (http://www.netlib.org/lapack/)
 libigl (http://libigl.github.io/libigl/)
 
 Running the executables without command line arguments will display usage
-information. All the data files for testing are located in the assets folder.
+information. All the data files for testing are located in the hgf_assets folder.
 
 
 
