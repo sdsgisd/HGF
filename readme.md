@@ -1,6 +1,6 @@
 # A Hyperbolic Geometric Flow for Evolving Films and Foams
 
-This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolving Films and Foams” Sadashige Ishida, Masafumi Yamamoto, Ryoichi Ando, and Toshiya Hachisuka, Transactions on Graphics (SIGGRAPH Asia 2017).
+This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolving Films and Foams” Ishida et al., Transactions on Graphics (SIGGRAPH Asia 2017).
 
 [[Project site]][P]  
 <a href="https://sadashigeishida.bitbucket.io/hgf/">  <img src="https://sadashigeishida.bitbucket.io/hgf/teaser_representative_image_small.jpg" height="150px"> </a>  
@@ -40,7 +40,7 @@ LAPACK (http://www.netlib.org/lapack/)
 libigl (http://libigl.github.io/libigl/)  
 
 ### Acknowledgement
-This program is built on SoapFilm3D, which is a simulation program accompanying the paper “Double Bubbles Sans Toil and Trouble: Discrete Circulation-Preserving Vortex Sheets for Soap Films and Foams”, Fang Da, Christopher Batty, Chris Wojtan, and Eitan Grinspun, Transactions on Graphics (SIGGRAPH 2015).
+This program is built on SoapFilm3D, which is a simulation program accompanying the paper “Double Bubbles Sans Toil and Trouble: Discrete Circulation-Preserving Vortex Sheets for Soap Films and Foams”, Da et al., Transactions on Graphics (SIGGRAPH 2015).
 
 
 
