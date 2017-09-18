@@ -3,7 +3,7 @@
 This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolving Films and Foams” Sadashige Ishida, Masafumi Yamamoto, Ryoichi Ando, and Toshiya Hachisuka, Transactions on Graphics (SIGGRAPH Asia 2017).
 
 This program is built by standard procedures using CMAKE (http://www.cmake.org).
-The following external libraries are required: 
+The following external libraries are required:   
 Eigen (http://eigen.tuxfamily.org)  
 OpenGL and GLUT (http://www.opengl.org/resources/libraries/glut/)  
 LAPACK (http://www.netlib.org/lapack/)  
