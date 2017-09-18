@@ -34,7 +34,7 @@ r: Move constrained vertices to right.
 -: Deflate a bubble. 
 
 m: Change rendering mode.  
-o: Save the state as files containing information of mesh (.obj), labels (_flabel.txt) and constrained vertices (_constvertex.txt).  
+o: Save the state as files containing information of mesh, labels, and constrained vertices.  
 O: Save the state as above, but with ghost vertices and faces.
 
 h: Switch flow to heyperbolic mean curvature flow / volume preserving hyperbolic mean curvature flow
