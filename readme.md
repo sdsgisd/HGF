@@ -19,10 +19,10 @@ libigl (http://libigl.github.io/libigl/)
 Author: Sadashige Ishida  
 Lisence: BSD
 
-## Basic sage
+## Basic Usage
 Running the executables without command line arguments will display the usage. Data files are located in the hgf_assets folder.
 
-
+### Acknowledgement
 This program is built on SoapFilm3D, which is a simulation program accompanying the paper “Double Bubbles Sans Toil and Trouble: Discrete Circulation-Preserving Vortex Sheets for Soap Films and Foams”, Fang Da, Christopher Batty, Chris Wojtan, and Eitan Grinspun, Transactions on Graphics (SIGGRAPH 2015).
 
 
