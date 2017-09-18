@@ -5,7 +5,7 @@ This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolvi
 [[Project site]][P]  
 <a href="https://sadashigeishida.bitbucket.io/hgf/">  <img src="https://sadashigeishida.bitbucket.io/hgf/teaser_representative_image_small.jpg" height="150px"> </a>  
 [[Youtube video]][Y]  
-<a href="https://www.youtube.com/watch?v=sqywQK7i4L4"><img src="http://i.ytimg.com/vi/sqywQK7i4L4/2.jpg" width="200px"></a>
+<a href="https://www.youtube.com/watch?v=sqywQK7i4L4"><img src="http://i.ytimg.com/vi/sqywQK7i4L4/3.jpg" width="200px"></a>
 
 [Y]:https://www.youtube.com/watch?v=sqywQK7i4L4
 [P]:https://sadashigeishida.bitbucket.io/hgf/
