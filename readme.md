@@ -19,7 +19,7 @@ Running the executables without command line arguments will display the usage. D
 Space: Turn on/off the clock.  
 s: Proceed one time step.  
 
-Slash: Turn on/off the scene specific update.
+Slash: Turn on/off the scene specific update.  
 b: Burst a randomly chosen bubble.  
 l: Move constrained vertices to left.  
 r: Move constrained vertices to right. 
