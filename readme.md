@@ -11,7 +11,7 @@ The following external libraries are required:
 * LAPACK (http://www.netlib.org/lapack/)  
 * libigl (http://libigl.github.io/libigl/)  
 
-Author: Sadashige Ishida
+Author: Sadashige Ishida  
 Lisence: BSD
 
 Running the executables without command line arguments will display usage
