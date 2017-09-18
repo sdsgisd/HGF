@@ -37,11 +37,6 @@ m: Change rendering mode.
 o: Save the state as files containing information of mesh, labels, and constrained vertices.  
 O: Save the state as above, but with ghost vertices and faces.
 
-h: Switch flow to heyperbolic mean curvature flow / volume preserving hyperbolic mean curvature flow
-shift+w: save the screenshot.  
-w: Turn on/off image save mode.  
-etc
-
 ### Acknowledgement
 This program is built on SoapFilm3D, which is a simulation program accompanying the paper “Double Bubbles Sans Toil and Trouble: Discrete Circulation-Preserving Vortex Sheets for Soap Films and Foams”, Fang Da, Christopher Batty, Chris Wojtan, and Eitan Grinspun, Transactions on Graphics (SIGGRAPH 2015).
 
