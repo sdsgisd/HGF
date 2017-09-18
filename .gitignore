@@ -31,4 +31,4 @@ CMakeCache.txt
 *.xcbkptlist
 *.DS_Store
 *.xcscheme
-*.ipynb_checkpoints
+*.ipynb_checkpoints/
