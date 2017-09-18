@@ -12,6 +12,7 @@ libigl (http://libigl.github.io/libigl/)
 Author: Sadashige Ishida  
 Lisence: BSD
 
+## Basic sage
 Running the executables without command line arguments will display the usage. Data files are located in the hgf_assets folder.
 
 
