@@ -12,6 +12,7 @@ This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolvi
 Author: Sadashige Ishida  
 Lisence: BSD
 
+## Dependencies
 This program is built by standard procedures using CMAKE (http://www.cmake.org).
 The following external libraries are required:   
 Eigen (http://eigen.tuxfamily.org)  
