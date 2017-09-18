@@ -1,4 +1,4 @@
-HGF is an implementation of the paper “A Hyperbolic Geometric Flow for Evolving Films and Foams” Sadashige Ishida, Masafumi Yamamoto, Ryoichi Ando, and Toshiya Hachisuka, Transactions on Graphics (SIGGRAPH Asia 2017).
+This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolving Films and Foams” Sadashige Ishida, Masafumi Yamamoto, Ryoichi Ando, and Toshiya Hachisuka, Transactions on Graphics (SIGGRAPH Asia 2017).
 
 Author: Sadashige Ishida
 Lisence: BSD
