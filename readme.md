@@ -9,8 +9,8 @@ The following external libraries are required:
 
 * Eigen (http://eigen.tuxfamily.org)  
 * OpenGL and GLUT (http://www.opengl.org/resources/libraries/glut/)  
-LAPACK (http://www.netlib.org/lapack/)  
-libigl (http://libigl.github.io/libigl/)  
+* LAPACK (http://www.netlib.org/lapack/)  
+* libigl (http://libigl.github.io/libigl/)  
 
 Running the executables without command line arguments will display usage
 information. All the data files for testing are located in the assets folder.
