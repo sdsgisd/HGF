@@ -5,7 +5,8 @@ This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolvi
 [[Project site]][P]  
 <a href="https://sadashigeishida.bitbucket.io/hgf/">  <img src="https://sadashigeishida.bitbucket.io/hgf/teaser_representative_image_small.jpg" height="100px"> </a>  
 [[Youtube video]][Y]  
-<a href="https://www.youtube.com/watch?v=sqywQK7i4L4"><img src="http://i.ytimg.com/vi/sqywQK7i4L4/1.jpg" width="200px"></a>  
+<a href="https://www.youtube.com/watch?v=sqywQK7i4L4"><img src="http://i.ytimg.com/vi/sqywQK7i4L4/1.jpg" width="200px"></a>
+
 [Y]:https://www.youtube.com/watch?v=pvgPOb8_gvw
 [P]:https://sadashigeishida.bitbucket.io/curvature_flows/curvature_flows.html
 This program is built by standard procedures using CMAKE (http://www.cmake.org).
