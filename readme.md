@@ -2,6 +2,11 @@
 
 This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolving Films and Foams” Sadashige Ishida, Masafumi Yamamoto, Ryoichi Ando, and Toshiya Hachisuka, Transactions on Graphics (SIGGRAPH Asia 2017).
 
+[[Project site]][p]  
+<a href="https://sadashigeishida.bitbucket.io/hgf/">  <img src="https://sadashigeishida.bitbucket.io/hgf/teaser_representative_image_small.jpg" width="200px"> </a>  
+[[Youtube video]][Y]  
+<a href="https://www.youtube.com/watch?v=sqywQK7i4L4"><img src="http://i.ytimg.com/vi/sqywQK7i4L4/0.jpg" width="200px"></a>
+
 This program is built by standard procedures using CMAKE (http://www.cmake.org).
 The following external libraries are required:   
 Eigen (http://eigen.tuxfamily.org)  
