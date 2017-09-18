@@ -400,7 +400,7 @@ int main(int argc, char * argv[])
     std::cout << "output: for outputting images and meshes." << std::endl;
     std::cout << "wo_visualization: Simulating without visualization." << std::endl;
     std::cout << "env_map_path=\"ENV_MAP_PATH\": Specify the directory of the environment map." << std::endl;
-    std::cout << "inputdata_dir=\"INPUT_DATA_DIR\": Specify the directory of the input data (.obj or .rec)." << std::endl;
+    std::cout << "inputdata_dir=\"INPUT_DATA_DIR\": Specify the directory of the input data such as obj or rec." << std::endl;
     std::cout<<std::endl;
 
     if(argc==1){exit(1);}
