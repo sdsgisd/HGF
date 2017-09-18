@@ -12,15 +12,6 @@ This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolvi
 Author: Sadashige Ishida  
 Lisence: BSD
 
-## Dependencies
-This program is built by standard procedures using CMAKE (http://www.cmake.org).
-The following external libraries are required:   
-Eigen (http://eigen.tuxfamily.org)  
-OpenGL and GLUT (http://www.opengl.org/resources/libraries/glut/)  
-LAPACK (http://www.netlib.org/lapack/)  
-libigl (http://libigl.github.io/libigl/)  
-
-
 ## Basic Usage
 Running the executables without command line arguments will display the usage. Data files are located in the hgf_assets folder.
 
@@ -39,6 +30,14 @@ m: Change rendering mode.
 o: Save the state as files containing information of mesh, labels, and constrained vertices.  
 O: Save the state as above, but with ghost vertices and faces.  
 and etc.
+
+## Dependencies
+This program is built by standard procedures using CMAKE (http://www.cmake.org).
+The following external libraries are required:   
+Eigen (http://eigen.tuxfamily.org)  
+OpenGL and GLUT (http://www.opengl.org/resources/libraries/glut/)  
+LAPACK (http://www.netlib.org/lapack/)  
+libigl (http://libigl.github.io/libigl/)  
 
 ### Acknowledgement
 This program is built on SoapFilm3D, which is a simulation program accompanying the paper “Double Bubbles Sans Toil and Trouble: Discrete Circulation-Preserving Vortex Sheets for Soap Films and Foams”, Fang Da, Christopher Batty, Chris Wojtan, and Eitan Grinspun, Transactions on Graphics (SIGGRAPH 2015).
