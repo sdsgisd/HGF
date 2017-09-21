@@ -7,13 +7,6 @@
 
 #include <cmath>
 #include <iostream>
-//#include <clapack.h>
-
-//#ifdef __APPLE__
-//#include <Accelerate/Accelerate.h>
-//#else 
-//#include <clapack.h>
-//#endif
 
 using std::max;
 using std::min;
@@ -108,74 +101,6 @@ namespace LAPACK{
         simple_least_squares_svd( m, n, nrhs, a, lda, b, info, rcond, rank );
     }
     
-    // end of platform-independent code
-    
-    // ---------------------------------------------------------
-    //  Inline function definitions --- Apple
-    // ---------------------------------------------------------
-    
-#ifdef __APPLE__
-    
-    inline int solve_general_system(int &n, int &nrhs, float *a, int lda, int *ipiv, float *b, int ldb, int &info)
-    { return sgesv_( (__CLPK_integer*) &n, 
-                    (__CLPK_integer*) &nrhs, 
-                    a, 
-                    (__CLPK_integer*) &lda, 
-                    (__CLPK_integer*) ipiv, 
-                    b, 
-                    (__CLPK_integer*) &ldb, 
-                    (__CLPK_integer*) &info); }
-    
-    inline int solve_general_system(int n, int nrhs, double *a, int lda, int *ipiv, double *b, int ldb, int &info)
-    { return dgesv_( (__CLPK_integer*) &n, 
-                    (__CLPK_integer*) &nrhs, 
-                    a, 
-                    (__CLPK_integer*) &lda, 
-                    (__CLPK_integer*) ipiv, 
-                    b, 
-                    (__CLPK_integer*) &ldb, 
-                    (__CLPK_integer*) &info); }
-    
-    
-    inline int factor_general_matrix(int m, int n, double *a, int lda, int *ipiv, int &info)
-    { return dgetrf_( (__CLPK_integer*)&m, (__CLPK_integer*)&n, a, (__CLPK_integer*)&lda, (__CLPK_integer*)ipiv, (__CLPK_integer*)&info); }
-    
-    
-    inline void invert_general_matrix(int n, double *a, int lda, int *ipiv, double *work, int lwork, int &info)
-    {
-        factor_general_matrix( n, n, a, lda, ipiv, info);
-        assert( info == 0 );
-        dgetri_( (__CLPK_integer*)&n, a, (__CLPK_integer*)&lda, (__CLPK_integer*)ipiv, work, (__CLPK_integer*)&lwork, (__CLPK_integer*)&info);  
-    }
-    
-    inline void get_eigen_decomposition( int *n, double *a, int* /*lda*/, double *eigenvalues, double *work, int *lwork, int *info )
-    {
-        static char char_v = 'V';
-        static char char_l = 'L';
-        dsyev_( &char_v, &char_l, (__CLPK_integer*)n, a, (__CLPK_integer*)n, eigenvalues, work, (__CLPK_integer*)lwork, (__CLPK_integer*)info );      
-    }
-    
-    
-    inline int svd( int* m, int* n, double* a, int* lda, double *s, double *u, int* ldu, double* vt, int *ldvt, double *work, int* lwork, int* iwork, int* info )
-    {
-        char char_a = 'A';
-        return dgesdd_( &char_a, (__CLPK_integer*)m, (__CLPK_integer*)n, a, (__CLPK_integer*)lda, s, u, (__CLPK_integer*)ldu, vt, (__CLPK_integer*)ldvt, work, (__CLPK_integer*)lwork, (__CLPK_integer*)iwork, (__CLPK_integer*)info ); 
-    }
-    
-    inline int least_squares_svd( int* m, int* n, int* nrhs,  double* a, int* lda,  double* rhs_sol, int* ldb,  double* s, double* rcond, int* rank, double* work, int* lwork, int* iwork, int *info )
-    {
-        return dgelsd_(  (__CLPK_integer*)m,  (__CLPK_integer*)n, (__CLPK_integer*)nrhs, a, (__CLPK_integer*)lda, rhs_sol, (__CLPK_integer*)ldb, s, rcond, (__CLPK_integer*) rank, work, (__CLPK_integer*) lwork, (__CLPK_integer*) iwork , (__CLPK_integer*) info );
-    }
-    
-#endif // end of __APPLE__ version of this file
-    
-    
-    // ---------------------------------------------------------
-    //  Inline function definitions --- Linux and Windows
-    // ---------------------------------------------------------
-    
-#ifndef __APPLE__ 
-    
 }     // namespace LAPACK
 
 extern "C" {
@@ -239,7 +164,6 @@ namespace LAPACK
     }   
     
     
-#endif //End of Windows and Linux version of this file
     
 } // end of namespace LAPACK
 
