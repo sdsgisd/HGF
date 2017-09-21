@@ -7,7 +7,7 @@
 
 #include <cmath>
 #include <iostream>
-#include <clapack.h>
+//#include <clapack.h>
 
 //#ifdef __APPLE__
 //#include <Accelerate/Accelerate.h>

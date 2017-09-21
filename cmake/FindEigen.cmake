@@ -16,6 +16,7 @@ find_path(
     Eigen/Core
     HINTS Eigen_INC_DIR ENV Eigen_INC_DIR
     DOC "Eigen include directory (http://eigen.tuxfamily.org/index.php?title=Main_Page)"
+    PATH_SUFFIXES "eigen3"
     PATHS
     /usr/local/include/eigen3
     /local/include/eigen3

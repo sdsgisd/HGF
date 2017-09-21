@@ -3,8 +3,8 @@ cmake_minimum_required (VERSION 2.6)
 cmake_policy(SET CMP0042 OLD)
 
 #Use gcc/g++-5
-set(CMAKE_CXX_COMPILER /usr/local/bin/g++-5)
-set(CMAKE_C_COMPILER /usr/local/bin/gcc-5)
+#set(CMAKE_CXX_COMPILER /usr/local/bin/g++-5)
+#set(CMAKE_C_COMPILER /usr/local/bin/gcc-5)
 
 #Use C++14.
 #set(CMAKE_CXX_FLAGS “${CMAKE_CXX_FLAGS} -std=c++14 -Wall”)
@@ -26,8 +26,7 @@ if (NOT CMAKE_BUILD_TYPE)
 endif (NOT CMAKE_BUILD_TYPE)
 
 # add directory with macros
-set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
-
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 # add cmake file
 include (common)
 
@@ -41,7 +40,6 @@ endif (CMAKE_BUILD_TYPE MATCHES Debug)
 #Eigen library is required
 find_package (Eigen REQUIRED)
 include_directories (${EIGEN_INCLUDE_DIR})
-
 
 option (USE_PNG "Builds in support for exporting to png" ON)
 if (USE_PNG)
@@ -62,19 +60,28 @@ find_package (LAPACK REQUIRED)
 include_directories(${LAPACK_INCLUDE_DIR})
 
 add_definitions (-DHAVE_LAPACK)
-set (DEFAULT_LIBRARIES ${DEFAULT_LIBRARIES} ${LAPACK_LIBRARIES})
 
 find_package (BLAS REQUIRED)
 add_definitions (-DHAVE_BLAS)
-set (DEFAULT_LIBRARIES ${DEFAULT_LIBRARIES} ${BLAS_LIBRARIES})
+
+# Rendering dependencies
+find_package (OpenGL REQUIRED)
+include_directories( ${OPENGL_INCLUDE_DIRS} )
+
+find_package (GLEW REQUIRED)
+include_directories( ${GLEW_INCLUDE_DIRS} )
+
+# LIBIGL
+find_package (IGL REQUIRED)
+include_directories( ${IGL_INCLUDE_DIR} )
+
+find_package (Threads)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/LosTopos/LosTopos3D)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/LosTopos/common)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/LosTopos/common/newsparse)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/LosTopos/common/tunicate)
-
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-
 
 add_subdirectory (LosTopos)
 add_subdirectory (HGF)

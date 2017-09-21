@@ -13,8 +13,13 @@
 #ifndef RenderingTank_Shader_h
 #define RenderingTank_Shader_h
 
+#ifdef __APPLE__
 #include "OpenGL/gl.h"
 #include "OpenGL/glu.h"
+#else
+#include "GL/gl.h"
+#include "GL/glu.h"
+#endif
 #include <string>
 #include <vector>
 #include <map>

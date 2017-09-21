@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 Columbia University. All rights reserved.
 //
 
+#ifndef __APPLE__
+#include <GL/glew.h>
+#endif
+
 #include "Shader.h"
 #include <fstream>
 #include <iostream>
