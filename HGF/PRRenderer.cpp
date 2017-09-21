@@ -7,6 +7,10 @@
 //
 //  Editted by Sadashige Ishida 2017
 
+#ifndef __APPLE__
+#include <GL/glew.h>
+#endif
+
 #include "Options.h"
 #include "PRRenderer.h"
 #include <png.h>
@@ -18,6 +22,14 @@ m_shader_env(),
 m_tex_env(0),
 env_map_path(env_map_path)
 {
+
+#ifndef __APPLE__
+    GLenum err = glewInit();
+    if (GLEW_OK != err) {
+        /* Problem: glewInit failed, something is seriously wrong. */
+        std::cerr << "Error: " <<  glewGetErrorString(err) << "\n";
+    }
+#endif
     
     m_shader_bubble.setVertexAttribName("a_position", 0);
     m_shader_bubble.setVertexAttribName("a_normal", 1);
