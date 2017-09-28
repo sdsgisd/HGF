@@ -37,8 +37,8 @@ The following external libraries are required:
 Eigen (http://eigen.tuxfamily.org)  
 LAPACK (http://www.netlib.org/lapack/)  
 libigl (http://libigl.github.io/libigl/)  
-For Mac OS, GLUT (http://www.opengl.org/resources/libraries/glut/)  
-For Linux, GLEW (http://glew.sourceforge.net/)
+OpenGL (https://www.opengl.org/)
+GLEW (http://glew.sourceforge.net/) for non-mac OS
 
 ### Acknowledgement
 This program is built on SoapFilm3D, which is a simulation program accompanying the paper “Double Bubbles Sans Toil and Trouble: Discrete Circulation-Preserving Vortex Sheets for Soap Films and Foams”, Da et al., Transactions on Graphics (SIGGRAPH 2015).
