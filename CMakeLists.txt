@@ -68,8 +68,10 @@ add_definitions (-DHAVE_BLAS)
 find_package (OpenGL REQUIRED)
 include_directories( ${OPENGL_INCLUDE_DIRS} )
 
+if(NOT APPLE)
 find_package (GLEW REQUIRED)
 include_directories( ${GLEW_INCLUDE_DIRS} )
+endif(NOT APPLE)
 
 # LIBIGL
 find_package (IGL REQUIRED)
