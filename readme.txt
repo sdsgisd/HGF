@@ -21,12 +21,12 @@ O: Save the state as above, but with ghost vertices and faces.
 and etc.
 
 [[Dependencies]]
-This program is built by standard procedures using CMAKE (http://www.cmake.org).
-The following external libraries are required:
+This program is built by standard procedures using CMAKE (http://www.cmake.org). The following external libraries are required:
 Eigen (http://eigen.tuxfamily.org)
-OpenGL and GLUT (http://www.opengl.org/resources/libraries/glut/)
 LAPACK (http://www.netlib.org/lapack/)
 libigl (http://libigl.github.io/libigl/)
+OpenGL (https://www.opengl.org/) 
+GLEW (http://glew.sourceforge.net/) for non-mac OS
 
 [Acknowledgement]
 This is built on SoapFilm3D, which is a simulation program accompanying the paper “Double Bubbles Sans Toil and Trouble: Discrete Circulation-Preserving Vortex Sheets for Soap Films and Foams”, Fang Da, Christopher Batty, Chris Wojtan, and Eitan Grinspun, Transactions on Graphics (SIGGRAPH 2015).
