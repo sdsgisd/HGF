@@ -37,7 +37,7 @@ The following external libraries are required:
 Eigen (http://eigen.tuxfamily.org)  
 LAPACK (http://www.netlib.org/lapack/)  
 libigl (http://libigl.github.io/libigl/)  
-OpenGL (https://www.opengl.org/)
+OpenGL (https://www.opengl.org/)  
 GLEW (http://glew.sourceforge.net/) for non-mac OS
 
 ### Acknowledgement
