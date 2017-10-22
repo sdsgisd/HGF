@@ -23,7 +23,7 @@ void HGF::set_parameters(){
     damp= Options::doubleValue("damping-coef");//1.0;0.999 ;0.995;1-dt*damp_scale.
     surface_tension=Options::doubleValue("surface_tension");;
 
-    smooth=Options::doubleValue("damping-coef");
+    smooth=Options::doubleValue("smooth-coef");
     const double eps=0.0001;
     smooth_from_neighbors=smooth<eps?false:true;
     
