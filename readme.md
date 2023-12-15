@@ -9,7 +9,7 @@ This is an implementation of the paper “A Hyperbolic Geometric Flow for Evolvi
 
 [Y]:https://www.youtube.com/watch?v=sqywQK7i4L4
 [P]:https://sadashigeishida.bitbucket.io/hgf/  
-Author: Sadashige Ishida and Masafumi Yamamoto  
+Authors: Sadashige Ishida and Masafumi Yamamoto  
 Lisence: MPL-2.0
 
 ## Basic Usage
